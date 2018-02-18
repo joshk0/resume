@@ -1,13 +1,12 @@
-default: resume.ps resume.pdf
+# NOTE: The latest version of this repository's build system is in
+# .circleci/config.yml. This file is provided for use by humans when they check
+# out and use this repository.
 
 %.dvi: %.tex resume.cls
 	latex $<
-
-%.ps: %.dvi
-	dvips $<
 
 %.pdf: %.dvi
 	dvipdfm $<
 
 clean:
-	rm -f *.dvi *.aux *.log *.ps *.pdf *.out
+	$(RM) *.dvi *.aux *.log *.ps *.pdf *.out
