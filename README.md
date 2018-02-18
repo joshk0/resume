@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/joshk0/resume.svg?style=svg)](https://circleci.com/gh/joshk0/resume)
+Build Status: [![CircleCI](https://circleci.com/gh/joshk0/resume.svg?style=svg)](https://circleci.com/gh/joshk0/resume)
 
 # Josh's Resume
 
