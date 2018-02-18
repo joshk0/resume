@@ -1,0 +1,134 @@
+% LaTeX resume using res.cls
+\documentclass[overlapped,line,margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+
+\begin{document}
+
+\name{Joshua M. Kwan \tt{<joshua.m.kwan@gmail.com>}}
+% \address used twice to have two lines of address
+\address{2192 Frederick Douglass Blvd, Apt 2W, New York, NY 10026}
+\address{(650) 906-2996}
+
+\begin{resume}
+
+\section{OBJECTIVE}
+A software engineering position with a focus in top-down design,
+systems programming, and open source collaboration.
+
+\section{EDUCATION} {\sl Bachelor of Science,} Electrical Engineering and Computer Science \\
+  University of California, Berkeley, CA, December 2008
+
+\section{SKILLS}
+\begin{itemize}
+\item {\sl Programming Languages:}
+  C, C++, Python, Perl, Autoconf, Makefile, Bash scripting, Ruby, Go, C\#, HTML,
+  JavaScript, SQL, Java, CSS, MIPS assembly, Lisp/Scheme, PHP
+\item {\sl Operating systems:}
+  Proficient at using and developing on modern Unix (Linux,
+  Solaris, FreeBSD, OS X) and Windows platforms
+\item {\sl Frameworks, Libraries and Platforms:}
+  Amazon Web Services, Google Compute Engine, Glib, GTK+, Win32 API, POSIX,
+  cURL, REST, pthreads, WiX/MSI, Core Foundation, Qt, J2EE, Android, Chef,
+  Django
+\item {\sl Source Control Systems:}
+  Git, Perforce, Subversion, CVS
+\item {\sl Spoken Languages:}
+  Fluent spoken/written English and French, basic spoken/written Japanese.
+\item Strong system and network administration skills for Linux and a
+  deep understanding of Linux distribution design from the ground up, from
+  kernel to packaging system.
+\end{itemize}
+
+\section{EXPERIENCE}
+{\sl Senior Software Engineer} \hfill May 2015 - Present \\
+\textbf{Pippio, Inc., New York, NY}
+
+  First technical non-founder at small digital advertising startup. Providing
+  leadership and ownership in the design of a data platform for receiving,
+  storing, and distributing customer data. Webscaled, fully redundant
+  deployment receives over 10,000 hits per second and growing. Written using Go
+  and deployed on Google Compute Engine.
+
+{\sl Senior Infrastructure Engineer} \hfill January 2014 - May 2015 \\
+\textbf{Schrodinger, Inc., New York, NY}
+
+  Scaling cloud infrastructure (Amazon Web Services and VMware vSphere) to
+  support LiveDesign, a unique collaborative drug design product. Helping with
+  the logistical challenges of bringing a 10 year old Java codebase up to date
+  with the realities of modern software while continuing to innovate on top of
+  it. Automating deployments of LiveDesign using Chef on various flavors of
+  Linux.
+
+{\sl Senior Member of Technical Staff} \hfill May 2012 - December 2013 \\
+\textbf{VMware, Inc., Palo Alto, CA}
+
+  \textbf{Horizon View Seamless Windows:} Porting the 'Unity' feature
+  from VMware Fusion and Workstation to work with VMware's Horizon View product.
+  'Unity' lets a user view the windows inside a VM seamlessly next to the other
+  windows on the VM host. Our port of the feature to remote desktops presents
+  unique challenges such as network latency. We ported the existing feature to
+  take advantage of code that has been tested in the field for over 5 years.
+  Judicious refactoring and cooperation with the Unity team allowed us to reuse
+  80\% of this code rather than needing to write our own solution from scratch.
+
+  \textbf{Horizon View HTML Access:} HTML Access provides browser-based
+  connectivity to a Horizon View virtual desktop. It leverages HTML5 to provide
+  a smooth desktop experience even under network load and latency across most
+  modern browsers, even those on mobile devices. I wrote RESTful APIs, dug into
+  Windows' Terminal Services APIs, and maintained several installers
+  surrounding the feature. The HTML Access feature has helped close many sales
+  of Horizon View and in some cases our customers opt to use it over deploying
+  the traditional View Client to their infrastructure.
+
+{\sl Member of Technical Staff} \hfill January 2009 - April 2012 \\
+\textbf{VMware, Inc., Palo Alto, CA}
+
+  \textbf{ThinApp Factory:} Developed solutions to automate creation of
+  ThinApp packages (virtualized applications for Windows) on a large scale
+  through use of RSS feeds and a work pool hosted on virtual infrastructure.
+  Helped build a turnkey appliance based on Debian that allows IT
+  administrators to hit the ground running with our software. Using
+  optimizations involving linked-clone virtual machines and snapshots, an admin
+  can create Office 2010 as a ThinApp package within 90 minutes of deployment.
+
+  \textbf{Component Download Service (CDS):} With my team, designed and wrote
+  both client, server, and consumer API for a generic web updater framework for
+  all VMware products, implemented in C using many open source libraries (cURL,
+  c-ares, Glib, and OpenSSL.) The framework leverages platform-specific
+  installer backends on Windows, Linux, and OS X, while providing a single
+  unified API. This project made its debut in VMware Workstation 7.0 and VMware
+  Fusion 3.0 and is still being used today.
+
+{\sl Network Manager} \hfill August 2007 - January 2008 \\
+\textbf{Berkeley Student Cooperative, Berkeley, CA}
+
+  Managed internal network infrastructure, firewall, routing
+  software, Internet connection, and file servers for a house of 120 residents.
+  Responsibilities include tasks from low-level (reinstalling broken Ethernet
+  ports) to high-level (managing network QoS and traffic-shaping in Linux.)
+
+{\sl Intern} \hfill Summer 2007 \\
+\textbf{VMware, Inc., Palo Alto, CA}
+
+  \textbf{Linux Easy Install}: A feature for VMware products that enables people
+  to simply insert an installation CD for a Linux distribution and instantly
+  create a virtual machine containing that operating system without any hassle.
+  Instead of forcing the user to download a hefty full virtual machine image,
+  the distribution's unattended installation mechanisms are leveraged to allow
+  quick deployment. Ubuntu and Red Hat-based distributions were the focus of
+  this effort, and the system now supports SuSE Linux as well.
+
+{\sl Volunteer Developer} \hfill 2003 - present \\
+\textbf{The Debian Project (www.debian.org)}
+
+  Putting together software packages for the Debian GNU/Linux distribution,
+  involving knowledge of Make, shell, C, and Perl, and understanding OS
+  infrastructure written in those languages. Also collaborated in writing the
+  Debian Installer's network interface management code and introduced support
+  for wireless configuration.
+
+\section{REFERENCES} Available upon request.
+
+\end{resume}
+\end{document}
