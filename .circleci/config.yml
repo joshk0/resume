@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: mattmahn/latex
+    steps:
+      - checkout
+      - run:
+          name: LaTeX build
+          command: latex resume.tex
+      - run:
+          name: PDF output
+          command: dvipdfm resume.dvi
+      - store_artifacts:
+          path: resume.pdf
