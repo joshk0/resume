@@ -2,6 +2,8 @@
 # .circleci/config.yml. This file is provided for use by humans when they check
 # out and use this repository.
 
+all: resume.pdf
+
 %.dvi: %.tex resume.cls
 	latex $<
 
