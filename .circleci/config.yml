@@ -6,13 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: install extra fonts
-          command: apt-get update && apt-get install texlive-fonts-extra fonts-font-awesome
-      - run:
-          name: LaTeX build
-          command: latex resume.tex
-      - run:
-          name: PDF output
-          command: dvipdfm resume.dvi
+          name: generate resume pdf
+          command: make
       - store_artifacts:
           path: resume.pdf
