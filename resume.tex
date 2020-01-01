@@ -1,16 +1,15 @@
-% LaTeX resume using res.cls
 \documentclass[overlapped,line,margin]{res}
 \usepackage[colorlinks]{hyperref}
 \usepackage{fontawesome5}
 \begin{document}
 
 \name{Joshua M. Kwan \tt{<joshk@triplehelix.org>}}
-% \address used twice to have two lines of address
 \address{
   \faIcon{globe} Queens, NY, USA
   \faIcon{phone} +1 (510) 646-0724
   \faIcon{github} \href{https://github.com/joshk0}{joshk0}
   \faIcon{linkedin} \href{https://linkedin.com/in/joshk0}{joshk0}
+  \faIcon{calendar} last updated \href{https://circleci.com/gh/joshk0/resume}{\today}
 }
 
 \begin{resume}
@@ -23,23 +22,23 @@ of the software realm.
 To apprentice and mentor the next generation of software engineers with
 empathy and understanding.
 
-\section{EDUCATION} {\sl Bachelor of Science,} Electrical Engineering and Computer Science \\
+\section{EDUCATION} \textit{Bachelor of Science,} Electrical Engineering and Computer Science \\
   University of California, Berkeley, CA, December 2008
 
 \section{SKILLS}
 \begin{itemize}
-\item {\sl Programming Languages:}
-  Go, Python, Makefile, Bash scripting, C, C++, Ruby, SQL, Java, JavaScript,
-  Autoconf, C\#, HTML, CSS, MIPS assembly, Lisp/Scheme, PHP
-\item {\sl Operating systems:}
+\item \textit{Programming Languages:} 
+  Go, Python, Makefile, Bash scripting, Ruby, C, C++, SQL, Java, JavaScript,
+  Autoconf, C\#, HTML, CSS, \LaTeX, MIPS assembly, Lisp/Scheme, PHP
+\item \textit{Operating systems:}
   Proficient at using, administrating, and developing on modern Unix (Linux,
   OS X, Solaris, FreeBSD) and Windows platforms
-\item {\sl Frameworks, Libraries and Platforms:}
+\item \textit{Frameworks, Libraries and Platforms:}
   Google Cloud Platform, Kubernetes, Docker, Amazon Web Services, Chef,
-  Android, POSIX, REST, Glib, GTK+, Win32 API, cURL, WiX/MSI
-\item {\sl Source Control Systems:}
+  GnuPG, OpenSSL, Android, POSIX, REST, Win32 API, cURL, Glib, GTK+, WiX/MSI
+\item \textit{Source Control Systems:}
   Git, Perforce, Subversion, CVS, Arch/Bazaar, Visual SourceSafe
-\item {\sl Spoken Languages:}
+\item \textit{Spoken Languages:}
   Native speaker and writer of English and French,
   basic spoken/written knowledge of Japanese and Mandarin.
 \item Strong system and network administration skills for Linux and a
@@ -47,31 +46,30 @@ empathy and understanding.
   kernel to packaging system.
 \item Ability to design and implement cloud infrastructure for large
   organizations with strong security and governance. Experienced in
-  on prem to cloud migrations.
-\item Certified Scrum Product Owner (November 2017)
+  on-prem to cloud migrations.
+\item \href{http://bcert.me/sfcqbkgtf}{Certified Scrum Product Owner}
 \end{itemize}
 
 \section{EXPERIENCE}
-{\sl Senior Software Engineer, DevOps} \hfill November 2016 - Present \\
+\textit{Senior Software Engineer, DevOps} \hfill November 2016 - \textit{present} \\
 \textbf{LiveRamp Holdings, New York, NY (formerly Acxiom Corporation)}
 
-  After Arbor was acquired by LiveRamp, led and managed the 8-developer
-  Ops (later DevOps) team. Successfully led this team over 18 months to
-  100\% migrate LiveRamp's environment from on-prem datacenter to Google
-  Cloud Platform. The migration of 90PB of data and 90,000 cores of data
+  After Arbor was acquired by LiveRamp, led and managed 6+ engineers in
+  the DevOps team. Successfully led this team over 18 months to fully
+  migrate LiveRamp's environment from on-prem datacenter to Google Cloud
+  Platform. The migration of 90PB of data and 90,000 cores of data
   processing workloads began in June of 2018 and concluded in November
   2019 with zero perceptible downtime by customers.
 
   During the migration, worked cross-functionally to implement brand new
   security, governance and cost control processes at the same time as
-  migration.  Mediated between security, compliance, and software
-  development teams to create the right balance of risk avoidance and
-  speed for delivery of product. Today, all LiveRamp teams feel strong
-  ownership over their infrastructure footprint and spend, thanks to the
-  efforts undertaken during the migration.
+  migration, superior to those which existed in the old environment.
+  Mediated between security, compliance, and software development teams
+  to the right balance of developer ownership, risk avoidance, and speed
+  of product delivery.
 
-{\sl Senior Software Engineer} \hfill May 2015 - November 2016 \\
-\textbf{Arbor Technologines, New York, NY}
+\textit{Senior Software Engineer} \hfill May 2015 - November 2016 \\
+\textbf{Arbor Technologies, New York, NY}
 
   First technical non-founder at small digital advertising startup.
   Provided leadership and ownership in the design of a data platform
@@ -79,7 +77,7 @@ empathy and understanding.
   fully redundant deployment receives over 10,000 hits per second.
   Written using Go and deployed on Google Compute Engine.
 
-{\sl Senior Infrastructure Engineer} \hfill January 2014 - May 2015 \\
+\textit{Senior Infrastructure Engineer} \hfill January 2014 - May 2015 \\
 \textbf{Schrodinger, Inc., New York, NY}
 
   Scaled cloud infrastructure (Amazon Web Services and VMware vSphere) to
@@ -89,7 +87,7 @@ empathy and understanding.
   it. Automated deployments of LiveDesign using Chef on various flavors of
   Linux.
 
-{\sl Member / Senior Member of Technical Staff} \hfill January 2009 - December 2013 \\
+\textit{Member / Senior Member of Technical Staff} \hfill January 2009 - December 2013 \\
 \textbf{VMware, Inc., Palo Alto, CA}
 
   \textbf{Horizon View HTML Access:} HTML Access provides browser-based
@@ -99,13 +97,15 @@ empathy and understanding.
   Windows' Terminal Services APIs, and maintained several installers
   surrounding the feature. The HTML Access feature helped close many sales
   of Horizon View and in some cases was preferred over the traditional
-  'fat' Horizon View client.
+  `fat' Horizon View client.
 
-  \textbf{Horizon View Seamless Windows:} Ported (80\% reuse) the
-  'Unity' feature from VMware's consumer products to Horizon View.
-  'Unity' lets a user view the windows inside a VM as if they were
-  windows on the host machine. Implementing this for Horizon View added
-  unique challenges like browser differences and network latency.
+  \textbf{Horizon View Seamless Windows:} A port (80\% reuse) of the
+  `Unity' feature from VMware's consumer products to Horizon View.
+  Seamless Windows removes the background from a user's View virtual
+  desktop so that the Windows appear seamlessly alongside the user's
+  other applications. They can be resized and dragged natively. The
+  port involved challenges such as cross-browser functionality and
+  higher latencies over the network.
 
   \textbf{ThinApp Factory:} Developed a product to help automate
   creation of ThinApp packages (virtualized applications for Windows) at
@@ -123,7 +123,7 @@ empathy and understanding.
   first relesed in October 2009 and the framework is still used today
   (as of January 2020.)
 
-{\sl Network Manager} \hfill August 2007 - January 2008 \\
+\textit{Network Manager} \hfill August 2007 - January 2008 \\
 \textbf{Berkeley Student Cooperative, Berkeley, CA}
 
   Managed internal network infrastructure, firewall, routing
@@ -131,7 +131,7 @@ empathy and understanding.
   Responsibilities include tasks from low-level (reinstalling broken Ethernet
   ports) to high-level (managing network QoS and traffic-shaping in Linux.)
 
-{\sl Intern} \hfill Summer 2007 \\
+\textit{Intern} \hfill Summer 2007 \\
 \textbf{VMware, Inc., Palo Alto, CA}
 
   \textbf{Linux Easy Install}: Improved feature for VMware consumer
@@ -142,8 +142,8 @@ empathy and understanding.
   Continued working on this after I became full-time and added support
   for SuSE Linux.
 
-{\sl Volunteer Developer} \hfill 2003 - present \\
-\textbf{The Debian Project (www.debian.org)}
+\textit{Volunteer Developer} \hfill 2003 - \textit{present} \\
+\textbf{\href{https://www.debian.org}{The Debian Project}, worldwide}
 
   Assembled and maintained software packages for the Debian GNU/Linux
   distribution, involving knowledge of Make, shell, C, and Perl. Added
