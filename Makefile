@@ -4,11 +4,8 @@
 
 all: resume.pdf
 
-%.dvi: %.tex resume.cls
-	latex $<
-
-%.pdf: %.dvi
-	dvipdfm $<
+%.pdf: %.tex
+	pdflatex $<
 
 clean:
 	$(RM) *.dvi *.aux *.log *.ps *.pdf *.out

@@ -1,20 +1,27 @@
 % LaTeX resume using res.cls
 \documentclass[overlapped,line,margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font
-
+\usepackage[colorlinks]{hyperref}
+\usepackage{fontawesome5}
 \begin{document}
 
-\name{Joshua M. Kwan \tt{<joshua.m.kwan@gmail.com>}}
+\name{Joshua M. Kwan \tt{<joshk@triplehelix.org>}}
 % \address used twice to have two lines of address
-\address{(510) 646-0724}
+\address{
+  \faIcon{globe} Queens, NY, USA
+  \faIcon{phone} +1 (510) 646-0724
+  \faIcon{github} \href{https://github.com/joshk0}{joshk0}
+  \faIcon{linkedin} \href{https://linkedin.com/in/joshk0}{joshk0}
+}
 
 \begin{resume}
 
 \section{OBJECTIVE}
-Seeking the opportunity to contribute my 15 years of experience in the open
-source ecosystem to develop robust products using elegant combinations of
-simple and non-overlapping components.
+To contribute my 15 years of experience in the software industry to
+build excellent products operating on top of robust infrastructure.
+To maximize what I learn every day from my peers both within and outside
+of the software realm.
+To apprentice and mentor the next generation of software engineers with
+empathy and understanding.
 
 \section{EDUCATION} {\sl Bachelor of Science,} Electrical Engineering and Computer Science \\
   University of California, Berkeley, CA, December 2008
@@ -22,91 +29,99 @@ simple and non-overlapping components.
 \section{SKILLS}
 \begin{itemize}
 \item {\sl Programming Languages:}
-  C, C++, Go, Python, Makefile, Bash scripting, Ruby, SQL, Java, JavaScript,
-  Autoconf, C\#, HTML, MIPS assembly, Lisp/Scheme, PHP
+  Go, Python, Makefile, Bash scripting, C, C++, Ruby, SQL, Java, JavaScript,
+  Autoconf, C\#, HTML, CSS, MIPS assembly, Lisp/Scheme, PHP
 \item {\sl Operating systems:}
   Proficient at using, administrating, and developing on modern Unix (Linux,
-  Solaris, FreeBSD, OS X) and Windows platforms
+  OS X, Solaris, FreeBSD) and Windows platforms
 \item {\sl Frameworks, Libraries and Platforms:}
-  Amazon Web Services, Google Compute Engine, Glib, GTK+, Win32 API, POSIX,
-  cURL, REST, pthreads, WiX/MSI, Core Foundation, Qt, J2EE, Android, Chef,
-  Django
+  Google Cloud Platform, Kubernetes, Docker, Amazon Web Services, Chef,
+  Android, POSIX, REST, Glib, GTK+, Win32 API, cURL, WiX/MSI
 \item {\sl Source Control Systems:}
-  Git, Perforce, Subversion, CVS
+  Git, Perforce, Subversion, CVS, Arch/Bazaar, Visual SourceSafe
 \item {\sl Spoken Languages:}
-  Native speaker and writer of English and French, basic spoken/written knowledge of
-  Japanese.
+  Native speaker and writer of English and French,
+  basic spoken/written knowledge of Japanese and Mandarin.
 \item Strong system and network administration skills for Linux and a
   deep understanding of Linux distribution design from the ground up, from
   kernel to packaging system.
+\item Ability to design and implement cloud infrastructure for large
+  organizations with strong security and governance. Experienced in
+  on prem to cloud migrations.
 \item Certified Scrum Product Owner (November 2017)
 \end{itemize}
 
 \section{EXPERIENCE}
-{\sl Senior Engineering Manager, DevOps} \hfill November 2016 - Present \\
-\textbf{LiveRamp, an Acxiom Company, New York, NY}
+{\sl Senior Software Engineer, DevOps} \hfill November 2016 - Present \\
+\textbf{LiveRamp Holdings, New York, NY (formerly Acxiom Corporation)}
 
-  After the acquisition of Arbor Technologies, the journey continues under
-  the LiveRamp banner. Leading an 8-developer team spanning New York
-  and San Francisco offices. The team's charter is to take LiveRamp's
-  engineering org on a journey from a traditional VMware/CentOS
-  on-premise environment into a AWS/Docker/Kubernetes deployment stack.
+  After Arbor was acquired by LiveRamp, led and managed the 8-developer
+  Ops (later DevOps) team. Successfully led this team over 18 months to
+  100\% migrate LiveRamp's environment from on-prem datacenter to Google
+  Cloud Platform. The migration of 90PB of data and 90,000 cores of data
+  processing workloads began in June of 2018 and concluded in November
+  2019 with zero perceptible downtime by customers.
+
+  During the migration, worked cross-functionally to implement brand new
+  security, governance and cost control processes at the same time as
+  migration.  Mediated between security, compliance, and software
+  development teams to create the right balance of risk avoidance and
+  speed for delivery of product. Today, all LiveRamp teams feel strong
+  ownership over their infrastructure footprint and spend, thanks to the
+  efforts undertaken during the migration.
 
 {\sl Senior Software Engineer} \hfill May 2015 - November 2016 \\
 \textbf{Arbor Technologines, New York, NY}
 
-  First technical non-founder at small digital advertising startup. Providing
-  leadership and ownership in the design of a data platform for receiving,
-  storing, and distributing customer data. Webscaled, fully redundant
-  deployment receives over 10,000 hits per second and growing. Written using Go
-  and deployed on Google Compute Engine.
+  First technical non-founder at small digital advertising startup.
+  Provided leadership and ownership in the design of a data platform
+  for receiving, storing, and distributing customer data. Webscaled,
+  fully redundant deployment receives over 10,000 hits per second.
+  Written using Go and deployed on Google Compute Engine.
 
 {\sl Senior Infrastructure Engineer} \hfill January 2014 - May 2015 \\
 \textbf{Schrodinger, Inc., New York, NY}
 
-  Scaling cloud infrastructure (Amazon Web Services and VMware vSphere) to
+  Scaled cloud infrastructure (Amazon Web Services and VMware vSphere) to
   support LiveDesign, a unique collaborative drug design product. Helping with
   the logistical challenges of bringing a 10 year old Java codebase up to date
   with the realities of modern software while continuing to innovate on top of
-  it. Automating deployments of LiveDesign using Chef on various flavors of
+  it. Automated deployments of LiveDesign using Chef on various flavors of
   Linux.
 
 {\sl Member / Senior Member of Technical Staff} \hfill January 2009 - December 2013 \\
 \textbf{VMware, Inc., Palo Alto, CA}
 
-  \textbf{Horizon View Seamless Windows:} Porting the 'Unity' feature
-  from VMware Fusion and Workstation to work with VMware's Horizon View product.
-  'Unity' lets a user view the windows inside a VM seamlessly next to the other
-  windows on the VM host. Our port of the feature to remote desktops presents
-  unique challenges such as network latency. We ported the existing feature to
-  take advantage of code that has been tested in the field for over 5 years.
-  Judicious refactoring and cooperation with the Unity team allowed us to reuse
-  80\% of this code rather than needing to write our own solution from scratch.
-
   \textbf{Horizon View HTML Access:} HTML Access provides browser-based
-  connectivity to a Horizon View virtual desktop. It leverages HTML5 to provide
+  connectivity to a Horizon View virtual desktop. Leveraged HTML5 to provide
   a smooth desktop experience even under network load and latency across most
-  modern browsers, even those on mobile devices. I wrote RESTful APIs, dug into
+  modern browsers, even those on mobile devices. Wrote RESTful APIs, dug into
   Windows' Terminal Services APIs, and maintained several installers
-  surrounding the feature. The HTML Access feature has helped close many sales
-  of Horizon View and in some cases our customers opt to use it over deploying
-  the traditional View Client to their infrastructure.
+  surrounding the feature. The HTML Access feature helped close many sales
+  of Horizon View and in some cases was preferred over the traditional
+  'fat' Horizon View client.
 
-  \textbf{ThinApp Factory:} Developed solutions to automate creation of
-  ThinApp packages (virtualized applications for Windows) on a large scale
-  through use of RSS feeds and a work pool hosted on virtual infrastructure.
-  Helped build a turnkey appliance based on Debian that allows IT
-  administrators to hit the ground running with our software. Using
-  optimizations involving linked-clone virtual machines and snapshots, an admin
-  can create Office 2010 as a ThinApp package within 90 minutes of deployment.
+  \textbf{Horizon View Seamless Windows:} Ported (80\% reuse) the
+  'Unity' feature from VMware's consumer products to Horizon View.
+  'Unity' lets a user view the windows inside a VM as if they were
+  windows on the host machine. Implementing this for Horizon View added
+  unique challenges like browser differences and network latency.
 
-  \textbf{Component Download Service (CDS):} With my team, designed and wrote
-  both client, server, and consumer API for a generic web updater framework for
-  all VMware products, implemented in C using many open source libraries (cURL,
-  c-ares, Glib, and OpenSSL.) The framework leverages platform-specific
-  installer backends on Windows, Linux, and OS X, while providing a single
-  unified API. This project made its debut in VMware Workstation 7.0 and VMware
-  Fusion 3.0 and is still being used today.
+  \textbf{ThinApp Factory:} Developed a product to help automate
+  creation of ThinApp packages (virtualized applications for Windows) at
+  a large scale. Helped build a virtual appliance which used Debian,
+  Java and the vSphere API to create and maintain ThinApps using a
+  continuous integration process. The product has since been
+  open-sourced and is available at
+  \faIcon{github}
+  \href{https://github.com/vmware/thinapp\_factory}{vmware/thinapp\_factory}.
+
+  \textbf{Component Download Service (CDS):} Co-designed and implemented
+  client and server APIs in C which allow delivery of software updates for
+  all VMware products, built on top of cURL and OpenSSL. Added specific
+  functionality for Windows, Linux and OS X. Products using CDS were
+  first relesed in October 2009 and the framework is still used today
+  (as of January 2020.)
 
 {\sl Network Manager} \hfill August 2007 - January 2008 \\
 \textbf{Berkeley Student Cooperative, Berkeley, CA}
@@ -119,22 +134,21 @@ simple and non-overlapping components.
 {\sl Intern} \hfill Summer 2007 \\
 \textbf{VMware, Inc., Palo Alto, CA}
 
-  \textbf{Linux Easy Install}: A feature for VMware products that enables people
-  to simply insert an installation CD for a Linux distribution and instantly
-  create a virtual machine containing that operating system without any hassle.
-  Instead of forcing the user to download a hefty full virtual machine image,
-  the distribution's unattended installation mechanisms are leveraged to allow
-  quick deployment. Ubuntu and Red Hat-based distributions were the focus of
-  this effort, and the system now supports SuSE Linux as well.
+  \textbf{Linux Easy Install}: Improved feature for VMware consumer
+  products which enables unattended installation of Linux distributions
+  from ISOs and CD media. This was important for users with slower
+  internet connections which were common at the time. Added support for
+  Ubuntu and Red Hat-based distributions during a 2-month internship.
+  Continued working on this after I became full-time and added support
+  for SuSE Linux.
 
 {\sl Volunteer Developer} \hfill 2003 - present \\
 \textbf{The Debian Project (www.debian.org)}
 
-  Putting together software packages for the Debian GNU/Linux distribution,
-  involving knowledge of Make, shell, C, and Perl, and understanding OS
-  infrastructure written in those languages. Also collaborated in writing the
-  Debian Installer's network interface management code and introduced support
-  for wireless configuration.
+  Assembled and maintained software packages for the Debian GNU/Linux
+  distribution, involving knowledge of Make, shell, C, and Perl. Added
+  the ability to use a wireless adapter while installing Debian (netcfg
+  subsystem written in C.)
 
 \end{resume}
 \end{document}
