@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: tianon/latex
+      - image: joshk0/resume
     steps:
       - checkout
       - run:
